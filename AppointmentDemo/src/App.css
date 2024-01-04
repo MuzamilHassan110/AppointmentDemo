@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.bg::before {
+  content: " ";
+  background: url("https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    center center/cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -11111111;
+  filter: blur(3px);
+  }
+
+.app {
+  color: rgb(252, 252, 252);
+  /* position: absolute; */
+  /* margin-top: 80px; */
+}
+
+.navbar {
+  margin-bottom: 150px;
+}
+
+.container {
+  /* margin-top: 80px; */
+  position: relative;
+}
+
+.list-group {
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-color: none;
+}
+
+.new {
+  padding-right: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.MuiGrid-container {
+  margin-left: 50rem;
+  /* padding-left: 40rem; */
+  color: red;
+}
+
+.appointmentHeading {
+  color: rgb(216, 210, 198);
+  white-space: nowrap;
+}
+
+.nav-link-hover:hover {
+  color: white;
+  transition: color 0.1s ease-in-out;
+}
+
+.NewnavbarIcon {
+  color: white;
+}
+.NewnavbarIcon:hover {
+  color: rgb(232, 236, 241);
+  background-color: rgba(27, 27, 26, 0.096);
+  transition: color 0.1s ease-in-out;
+}
+
+.modal-header-custom {
+  background-color: lightgray;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  text-align: center;
+}
+
+.modal-header-title {
+  padding-left: 19rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800 !important;
+  color: rgba(46, 44, 44, 0.726);
+}
+
+.patientDetails_icon {
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 40%;
+  top: 50px;
+  margin: 5px auto;
+  padding-left: 20px;
+  background-color: rgba(236, 231, 231, 0.734) !important;
+  border: none;
+  box-shadow: inset 5px 5px 20px rgb(230, 228, 228),
+    5px 5px 5px rgb(129, 129, 129);
+  transition: all 0.7s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: inset -5px -5px 20px rgb(230, 228, 228),
+    inset 5px 5px 5px rgb(129, 129, 129);
+  background-color: rgba(241, 240, 240, 0.334);
+}
+.cardText {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  justify-content: space-around;
+  align-items: baseline;
+  color: #535353;
+  /* color: rgb(209, 207, 207); */
+  text-shadow: 2px 2px 1px rgba(13, 109, 253, 0.322);
+  padding-bottom: 10px !important;
+}
+.btnCard {
+  font-size: 1.5rem !important;
+  color: rgb(71, 59, 243) !important;
+  border: 2px solid #0dcaf0 !important;
+  transition: all 0.5s ease-in-out !important;
+  font-weight: bold !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+body .MuiButton-root .btnCard {
+  font-size: small;
+  display: inline;
+  flex-direction: row;
+}
+
+/* .btnCard:hover {
+  border: 2px solid #0dcaf0;
+  background: transparent;
+  color: #f00d0d;
+} */
+
+.MuiButton-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* .btnCard-1 {
+  margin-left: 10px;
+  border: 2px solid #dc3545;
+}
+
+.btnCard-1:hover {
+  border: 2px solid #dc3545;
+  background: transparent;
+  color: #dc3545;
+} */
+
+.modal {
+  transition: all 0.5s ease-in-out;
+}
+.md {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.mb::before {
+  content: " ";
+  background: url("https://plus.unsplash.com/premium_photo-1661506626126-58c9d6d67f0b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    center center/cover;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-clip: initial;
+  opacity: 0.35;
+  filter: blur(3px);
+}
+.chart {
+  padding-top: 100px;
+  background-color: rgba(202, 200, 200, 0.627);
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(202, 200, 200, 0.627);
+}
+
+.chartHeading {
+  font-size: 2.5vw;
+  display: flex;
+  align-items: start;
+  color: rgba(255, 255, 255, 1);
+}
+
+.addImage {
+  color: wheat;
+}
+
+
+
+/* 
+labels {
+  font-size: 100px;
+} */
+
+.apexcharts-container .apexcharts-legend-text {
+  font-size: 14px !important;
+  
+}
+.StatusAppointment {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  padding-left: 23rem; 
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  display: flex;
+  top: -60px;
+  font-size: 40rem;
+  position: absolute;
+}
+.statusIcon {
+  position: absolute;
+  display: flex;
+  left: 8rem;
+  padding-left: 0.3rem;
+  font-size: 35px;  
+  top:-50px;
+  font-weight: bold;
+  
+}
+.Box-style {
+  margin-top: 15rem;
+  width: 50%;
+  margin-left: 27rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5rem;
+  border: 2px solid rgb(16, 165, 214);
+  padding: 3rem;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .Box-style {
+    width: 70%;
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Box-style {
+    width: 80%;
+    margin-left: 3rem;
+    border-radius: 3rem;
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 450px) {
+ 
+  .appointmentHeading {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .MuiGrid-container {
+   margin-left: 0.5rem;
+   /* display: flex; */
+  }
+  .headigIcon {
+    margin-left: -20px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .MuiGrid-item{
+    /* margin-left: -50rem; */
+  }
+
+  .Box-style {
+    margin-top: 8rem;
+    width: 70%;
+    /* height: 30%; */
+    margin-left: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2rem;
+    border: 2px solid rgb(16, 165, 214);
+    padding: 3rem;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4);
+  }
+   #transition-modal-title {
+    font-size: 20px;
+  }
+  .submit Button{
+    color: red;
+  }
+
+  .card {
+    width: 80%;
+    margin-left: 10px;
+  }
+   .MuiListItem-root {
+    font-size: 10px;
+   }
+  .StatusAppointment {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    padding-left: 5rem;
+    font-size: 30px; 
+  }
+  
+}
+
+/* @media (max-width: 768px) {
+  .MuiGrid-container {
+    margin-left: 15rem;
+    color: red;
+  }
+} */
